@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistema de Calificaciones</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Calificaciones Ingeniería de Software</h1>
+
+  <div id="login">
+    <input type="text" id="usuario" placeholder="Número de cuenta" />
+    <input type="password" id="password" placeholder="Contraseña" />
+    <button onclick="iniciarSesion()">Entrar</button>
+    <p id="error" style="color: red;"></p>
+  </div>
+
+  <div id="dashboard" style="display:none;">
+    <h2 id="nombreAlumno"></h2>
+
+    <div class="seccion">
+      <h3>Ejercicios</h3>
+      <ul id="lista-ejercicios"></ul>
+    </div>
+
+    <div class="seccion">
+      <h3>Tareas</h3>
+      <ul id="lista-tareas"></ul>
+    </div>
+
+    <div class="seccion">
+      <h3>Exámenes</h3>
+      <ul id="lista-examenes"></ul>
+    </div>
+
+    <div class="seccion">
+      <h3>Proyecto Final</h3>
+      <div id="lista-proyecto"></div>
+    </div>
+
+    <div class="seccion">
+      <h3>Asistencias</h3>
+      <ul id="lista-asistencias"></ul>
+    </div>
+
+    <div id="resumenFinal" class="seccion"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
